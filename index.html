@@ -1,46 +1,71 @@
   <!DOCTYPE html>
   <html>
   <head>
+    <link rel="stylesheet" href="style.css">
      <title>Airlink</title>
-     <img src="images\logo.png" alt="Airlink" width="200" height="50">
   </head>
   <body>
-
-    <header>
-        <h1>Airlink</h1>
-        <h1>Таны аялалыг бид бүтээнэ</h1>
-        <nav>
+    <header> 
+        <section class="fill">
+            <!-- fill hiij baigaa heseg -->
+        </section>
+        <section class="navbar">
+            <img class="logo" src="https://airlink.mn/44c14a03ac95294e1ce7dba508111550.svg">
             <a href="#">Мэдээ</a>
             <a href="#">Тусламж үйлчилгээ</a>
             <a href="#">Нэвтрэх</a>
-        </nav>
-        <img src="images\background.jpg" alt="Button image" width="1500" height="400">
+        </section>
 
-        <article>
-            <button type="button">
-                <img src="images\flight-hero.jpg" alt="Airlink" width="150" height="200" alt="Button image">
-                <span>Нислэг</span>
-                <button type="button">
-                    <img src="images\aylal.jpg" alt="Airlink" width="150" height="200" alt="Button image">
-                    <span>Аялал</span>
-                </button>
-                <button type="button">
-                    <img src="images\hotel.jpg" alt="Airlink" width="150" height="200" alt="Button image">
-                    <span>Буудал</span>
-                </button>
-            </button>
-        </article>
+    <style>
+        @media screen and (max-width: 1000px) {
+					.tanii{
+                        color: red;
+					}
+                    .navbar a{
+                        margin: 0px;
+                        float: right;
+                        font-size: 15px;
+                    }
+                    .logo{
+                        width: 20%;
+                    }
+		        }
+        @media screen and (max-width: 1700px){
+            .buttons button img{
+                width: 150px;
+                height: 200px;
+            }
+        }
+    </style>
+        
     </header>
 
 
     <main>
+        <h1 class="tanii">Таны аялалыг бид бүтээнэ</h1>
+        <article class="buttons">
+            <button>
+                <a href="https://www.facebook.com/"><img src="images\flight-hero.jpg" alt="Airlink" width="210" height="280"></a>
+                <span>Нислэг</span>
+            </button>
+            <button>
+                <a href="https://www.facebook.com/"><img src="images\aylal.jpg" alt="Airlink" width="210" height="280"></a>
+                <span>Аялал</span>
+            </button>
+            <button>
+                <a href="https://www.facebook.com/"><img src="images\hotel.jpg" alt="Airlink" width="210" height="280"></a>
+                <span>Буудал</span>
+            </button>
+        </article>
+
+
         <article class="status">
             <article class="option">
                 <ul>
-                    <li> <i class="fa-solid fa-plane" alt="One-way flight"></i>1 талдаа</li>
-                    <li> <i class="fa-solid fa-user" alt="Passengers"></i>Зорчигчид</li>
-                    <li> <i class="fa-solid fa-tag" alt="Departure date"></i>Явах огноо</li>
-                    <li> <i class="fa-solid fa-tag" alt="Economy class"></i>Энгийн</li>
+                    <li>1 талдаа</li>
+                    <li>Зорчигчид</li>
+                    <li>Явах огноо</li>
+                    <li>Энгийн</li>
                 </ul>
             </article>
             <label for="exampleDataList" class="form-label">Хаанаас:</label>
@@ -63,7 +88,7 @@
             </datalist>
         </article>
 
-        <article>
+        <article class="travelb">
             <img src="images\Travel.png" alt="Нислэгээ хайх" width="1000" height="500">
             <p>Адал явдалт аялалаа эхлүүл</p>
             <button>Нислэгээ Хайх</button>
@@ -76,7 +101,7 @@
             <img src="images/bangkokmain.jpg" width="200" height="100">
             <div class="text-container">
                 <h4>Бангкок</h4>
-                <ul class="buttons">
+                <ul class="buttonuud">
                     <li><a href="#">Нислэг</a></li>
                     <li><a href="#">Аялал</a></li>
                     <li><a href="#">Буудал</a></li>

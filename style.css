@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
+body{
+    background: url(./images/blueimg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 38px;
+}
+*{
+    margin: 0px;
+}
+.fill{
+    padding:19px;
+    background: #913469;
+}
+.navbar{
+    width: 100%;
+}
+.logo{
+    margin: 10px;
+    position: relative;
+}
+.navbar a{
+    margin-right: 20px;
+    padding: 10px;
+    position: relative;
+    float: right;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+}
+.navbar a:hover{
+    background: #913469;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+}
+.tanii{
+    color: white;
+    position: relative;
+    top: 17vh;
+    font-size: 50px;
+}
+.buttons{
+    position: absolute;
+    left:55vw;
+}
+.buttons button {
+    position: relative;
+    background: transparent;
+    border: none;
+    overflow:hidden;
+}
+.buttons button img{
+    transition:  0.2s;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
+    
+}
+.buttons button:hover img{
+    opacity: 0.75;
+}
+
+.buttons button span {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+.buttons button:hover span{
+    opacity: 1;
+    border-radius: 10px;
+    color: grey;
+}
+.status{
+    position: absolute;
+    top: 50vh;
+    left: 40vw;
+}
+.travelb{
+    position: relative;
+    top: 50vh;
+    text-align: center;
+    background-position: center ;
+
+}
