@@ -37,8 +37,10 @@ body{
 .tanii{
     color: white;
     position: relative;
+    font-family: 'Lobster', sans-serif;
     top: 17vh;
-    font-size: 50px;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .buttons{
     position: absolute;
@@ -63,11 +65,13 @@ body{
 
 .buttons button span {
     position: absolute;
+    font-family: 'PT Sans', sans-serif;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 40px;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .buttons button:hover span{
     opacity: 1;
