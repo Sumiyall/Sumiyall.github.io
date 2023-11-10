@@ -1,6 +1,7 @@
   <!DOCTYPE html>
   <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Airlink</title>
 
@@ -61,47 +62,83 @@
                 <span>Буудал</span>
             </button>
         </article>
-
-
+        
         <article class="status">
-            <article class="option">
-                <ul>
-                    <li>1 талдаа</li>
-                    <li>Зорчигчид</li>
-                    <li>Явах огноо</li>
-                    <li>Энгийн</li>
-                </ul>
-            </article>
-            <label for="exampleDataList" class="form-label">Хаанаас:</label>
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Улаанбаатар">
-            <datalist id="datalistOptions">
-                <option value="San Francisco">
-                <option value="New York">
-                <option value="Seattle">
-                <option value="Los Angeles">
-                <option value="Chicago">
-            </datalist>
-            <label for="exampleDataList" class="form-label">Хаашаа:</label>
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Вашингтон">
-            <datalist id="datalistOptions">
-                <option value="San Francisco">
-                <option value="New York">
-                <option value="Seattle">
-                <option value="Los Angeles">
-                <option value="Chicago">
-            </datalist>
-        </article>
+            <section class="bar">
+                <div class="containertal">
+                    <div><button>1 талдаа</button></div>
+                    <div><button>2 талдаа</button></div>
+                </div>
+                <div class="containerzor">
+                    <div class="zor">
+                        <label class="zorchigch">Зорчигчид</label>
+                        <select class="zorselect">
+                            <option selected>Том хүн</option>
+                            <option value="1">Хүүхэд</option>
+                            <option value="2">Нярай</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="containerdate">
+                    <div>
+                        <label class="date">date djfvudysf</label>
+                            <input type="date">
+                    </div>
+                </div>
+                <div class="klass">
+                    <label for="">suudal aa songono uu</label>
+                    <select class="engiin">
+                        <option selected>Энгийн</option>
+                        <option value="1">Тусгай</option>
+                        <option value="2">Бизнес</option>
+                      </select>
+                </div>
+            </section>
+            <section class="containerdown">
+                <div>
+                    <label for="exampleDataList" class="form-label">Хаанаас:</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Улаанбаатар">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="exampleDataList" class="form-label">Хаашаа:</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Вашингтон">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+        
+                <div>
+                    <button> Нислэг хайх</button>
+                </div></section>
+        </article> 
+
+
+
+
 
         <article class="travelb">
-            <img src="images\Travel.png" alt="Нислэгээ хайх" width="1000" height="500">
-            <p>Адал явдалт аялалаа эхлүүл</p>
+            <div class="overlay">
+                <p class="adal">Адал явдалт аялалаа эхлүүл</p>
+                <img src="images\Travel.png" alt="Нислэгээ хайх" width="1000" height="100">
+            </div>
             <button>Нислэгээ Хайх</button>
         </article>
 
-        <strong><h2>Эрэлттэй байгаа аялалууд</h2></strong>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h3>
-
+        
         <article class="hotcontainer">
+            <strong><h2>Эрэлттэй байгаа аялалууд</h2></strong>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h3>
             <section class="bangkok-section">
                 <img src="images/bangkokmain.jpg" width="200" height="100">
                 <div class="text-container">
@@ -118,7 +155,7 @@
                 <img src="images\miamiMain.png" width="200" height="100">
                 <div class="text-container">
                   <h4>Миами</h4>
-                  <ul class="buttons">
+                  <ul class="buttonkk">
                     <li><a href="#">Нислэг</a></li>
                     <li><a href="#">Аялал</a></li>
                     <li><a href="#">Буудал</a></li>
@@ -130,7 +167,7 @@
                 <img src="images\japanMain.jpg" width="200" height="100">
                 <div class="text-container">
                   <h4>Токио</h4>
-                  <ul class="buttons">
+                  <ul class="buttonkk">
                     <li><a href="#">Нислэг</a></li>
                     <li><a href="#">Аялал</a></li>
                     <li><a href="#">Буудал</a></li>
@@ -142,7 +179,7 @@
                 <img src="images\seoulMain.jpg" width="200" height="100">
                 <div class="text-container">
                   <h4>Сөүл</h4>
-                  <ul class="buttons">
+                  <ul class="buttonkk">
                     <li><a href="#">Нислэг</a></li>
                     <li><a href="#">Аялал</a></li>
                     <li><a href="#">Буудал</a></li>
