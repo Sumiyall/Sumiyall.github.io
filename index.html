@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-  <html lang="mn">
+  <!DOCTYPE html>
+  <html>
   <head>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Airlink</title>
-    <link rel="icon" href="logos/logo1.png">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/faq.js"></script>
-    <script src="js/citiesselector.js"></script>
-    <link rel="stylesheet" href="css/faq.css">
-    <link rel="stylesheet" href="css/faqcont.css">
-    <link rel="stylesheet" href="css/footer.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="css/flightform.css">
-    <link rel="stylesheet" href="css/package.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&family=Lobster&family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
   </head>
@@ -23,273 +15,253 @@
             <!-- fill hiij baigaa heseg -->
         </section>
         <section class="navbar">
-            <img class="logo" src="https://airlink.mn/44c14a03ac95294e1ce7dba508111550.svg" alt="Logo">
-            <a href="pages/login.html">Нэвтрэх</a>
+            <img class="logo" src="https://airlink.mn/44c14a03ac95294e1ce7dba508111550.svg">
+            <a href="#">Нэвтрэх</a>
             <a href="#">Тусламж үйлчилгээ</a>
             <a href="#">Мэдээ</a>
         </section>
 
     <style>
         @media screen and (max-width: 1000px) {
-          .navbar a{
-            margin: 0px;
-            float: right;
-            font-size: 15px;
-          }
-          .logo{
-            width: 20%;
-          }
-		    }
+					.tanii{
+                        color: red;
+					}
+                    .navbar a{
+                        margin: 0px;
+                        float: right;
+                        font-size: 15px;
+                    }
+                    .logo{
+                        width: 20%;
+                    }
+		        }
         @media screen and (max-width: 1700px){
-          .buttons button img{
-            width: 150px;
-            height: 200px;
-          }
+            .buttons button img{
+                width: 150px;
+                height: 200px;
+            }
         }
     </style>
         
     </header>
-      <main>
+
+
+    <main>
         <h1 class="tanii">Таны аялалыг бид бүтээнэ</h1>
-        <section class="buttons">
+        <article class="buttons">
             <button>
-                <a href="index.html"><img src="images\flight-hero.jpg" alt="Airlink" width="210" height="280"></a>
+                <a href="https://www.facebook.com/"><img src="images\flight-hero.jpg" alt="Airlink" width="210" height="280"></a>
                 <span>Нислэг</span>
             </button>
             <button>
-                <a href="pages/travel.html"><img src="images\aylal.jpg" alt="Airlink" width="210" height="280"></a>
+                <a href="https://www.facebook.com/"><img src="images\aylal.jpg" alt="Airlink" width="210" height="280"></a>
                 <span>Аялал</span>
             </button>
             <button>
-                <a href="pages/hotel.html"><img src="images\hotel.jpg" alt="Airlink" width="210" height="280"></a>
+                <a href="https://www.facebook.com/"><img src="images\hotel.jpg" alt="Airlink" width="210" height="280"></a>
                 <span>Буудал</span>
             </button>
-        </section>
-
-
-        <section class="flightbooking">
-          <div class="flightbooking__container">
-              <div class="flightbooking__top">
-                  <div class="flight__option active">
-                     <a href="#">Нислэг захиалах  </a>
-                  </div>
-              </div>
-              <div class="flightbooking__bottom">
-                <div class="flighttypes">
-                  <div class="filghttype">
-                    <!-- <a href="#">
-                      2 талдаа
-                      <div class=""></div>
-                    </a> -->
-                    <select class="engiin">
-                      <option selected>Энгийн</option>
-                      <option value="1">Тусгай</option>
-                      <option value="2">Бизнес</option>
-                    </select>
-                  </div>
-                  <div class="filghttype">
-                    <!-- <a href="#">
-                      Том хүн
-                      <div class=""></div>
-                    </a> -->
-                    <select class="zorselect">
-                      <option selected>Том хүн</option>
-                      <option value="1">Хүүхэд</option>
-                      <option value="2">Нярай</option>
-                    </select>
-                  </div>
-                  <div class="filghttype">
-                    <select class="zorselect">
-                      <option selected>1 зорчигч</option>
-                      <option value="1">2 зорчигч</option>
-                      <option value="2">3 зорчигч</option>
-                    </select>
-                  </div>
+        </article>
+        
+        <article class="status">
+            <section class="bar">
+                <div class="containertal">
+                    <div><button>1 талдаа</button></div>
+                    <div><button>2 талдаа</button></div>
                 </div>
-      
-                <form action="" class="flightform">
-                  <div class="flightform__conn">
-                    <div class="flightform__from">
-                      <div class="">
-                        <label for="fromCitySelect">Хаанаас ?</label>
-                        <select id="fromCitySelect" name="fromCity">
-                            <option value="">Нисэх хот</option>
+                <div class="containerzor">
+                    <div class="zor">
+                        <label class="zorchigch">Зорчигчид</label>
+                        <select class="zorselect">
+                            <option selected>Том хүн</option>
+                            <option value="1">Хүүхэд</option>
+                            <option value="2">Нярай</option>
                         </select>
                     </div>
-                    
-                    <div class="">
-                        <label for="toCitySelect">Хаашаа ?</label>
-                        <select id="toCitySelect" name="toCity">
-                            <option value="">Буудаллах хот</option>
-                        </select>
+                </div>
+                <div class="containerdate">
+                    <div>
+                        <label class="date">date djfvudysf</label>
+                            <input type="date">
                     </div>
-                    
-                    </div>
-      
-                    <div class="flightform__date">
-                      <div class="">
-                          <label for="departureDate">Нислэгийн өдөр</label>
-                          <input
-                              type="date"
-                              name="departureDate"
-                              id="departureDate"
-                          />
-                      </div>
-                  
-                      <div class="">
-                          <label for="returnDate">Буцах өдөр</label>
-                          <input
-                              type="date"
-                              name="returnDate"
-                              id="returnDate"
-                          />
-                      </div>
-                  </div>
-                  
-                  </div>
+                </div>
+                <div class="klass">
+                    <label for="">suudal aa songono uu</label>
+                    <select class="engiin">
+                        <option selected>Энгийн</option>
+                        <option value="1">Тусгай</option>
+                        <option value="2">Бизнес</option>
+                      </select>
+                </div>
+            </section>
+            <section class="containerdown">
+                <div>
+                    <label for="exampleDataList" class="form-label">Хаанаас:</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Улаанбаатар">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="exampleDataList" class="form-label">Хаашаа:</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Вашингтон">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                </div>
+        
+                <div>
+                    <button> Нислэг хайх</button>
+                </div></section>
+        </article> 
 
-                  
-      
-                  <div class="submitdiv">
-                    <button class="flightsubmit" onclick="book()">Захиалах</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </section>
+        <article class="travelb">
+            <article class="im">
+                <img src="images\Travel.png" alt="Нислэгээ хайх" width="1000" height="100">
+                <span class="adal">Адал явдалт аялалаа эхлүүл</span>
+            </article>
+            <a href="https://www.facebook.com/"><button class="haihB">Нислэгээ хайх</button></a>
+        </article>
 
-
-          <section class="packages" id="packages">
-            <h1>Нислэгийн багцууд</h1>
-              <div class="row">
-            </div>
-          </section> 
-
-
-          <div class="faq-container">
-            <h1>Түгээмэл асуултууд</h1>
-            <a href="#" class="togglefaq">Танай байгууллага авиа компаниас гаргасан үнийг хямдруулах болон дээш нь нэмж борлуулдаг уу ?</a>
-            <div class="faqanswer">
-              <p>&#x2022; Уучлаарай манай байгууллага нь тухайн авиа компаний гаргасан тийз борлуулах үнээр тийзээ борлуулдаг бөгөөд ямар нэг нэмэгдэл төлбөр авдаггүй болно . </p>
-            </div>
+        
+        <section class="hotcontainer">
+            <strong><h2>Эрэлттэй байгаа аялалууд</h2></strong>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h3>
+            <article class="bangkok-section">
+                <img src="images/bangkokmain.jpg" width="200" height="100">
+                <div class="text-container">
+                    <h4>Бангкок</h4>
+                    <ul class="buttonuud">
+                        <li><a href="#">Нислэг</a></li>
+                        <li><a href="#">Аялал</a></li>
+                        <li><a href="#">Буудал</a></li>
+                    </ul>
+                </div>
+            </article>
     
-            <a href="#" class="togglefaq"> Хэрвээ тийм бол яагаад тийзний үнэ өөр өөр байдаг юм бэ?</a>
-              <div class="faqanswer">
-                <p>&#x2022; Тухайн нислэгт зарлагдсан байгаа үнүүд нь тийзний нөхцөл/хатуу болон зөөлөн дүрэмтэй/ , тийзний хугацаа/ 15 хоног, 21 хоног, 1 сар, 3 сар/ болон тухайн нислэгийн суудлын боломжоос шалтгаалан өөр өөр үнэтэй байдаг .
-
-                  Жишээ нь: МИАТ-ын нислэгийн УБ-Сөүл-УБ чиглэлд энгийн зэрэглэл 1 талдаа, 2-р талдаа - 1 сар,3 сар,6 сар,12 сар, бизнес зэрэглэл (1 талдаа, 2-р талдаа - 1 сар,3 сар,6 сар,12 сар ), эдгээр дотор хатуу дүрэмтэй, зөөлөн дүрэмтэй, Ахмадын хөнгөлөлт, залуучуудын хөнгөлөлт, гэр бүлийн хөнгөлөлт, оюутны хөнгөлөлт гм алийг нь сонгохоос шалтгаалж олон төрлийн үнэтэй билет байдаг.</p>
-              </div>
-
-            <a href="#" class="togglefaq"> Нислэгээ ашиглах боломжгүй болсон үед суудлаа заавал хасуулах хэрэгтэй юу</a>
-              <div class="faqanswer">
-                <p>&#x2022; Авиа компаний дүрмэнд онгоц хоосон нисгэсний торгууль (Noshow) гэж байдаг тул та товлогдсон өдрөө нисэж амжихааргүй бол бидэнтэй холбогдож заавал суудлаа хасуулахыг зөвлөж байна.</p>
-              </div>    
+            <article class="miami-section">
+                <img src="images\miamiMain.png" width="200" height="100">
+                <div class="text-container">
+                  <h4>Миами</h4>
+                  <ul class="buttonkk">
+                    <li><a href="#">Нислэг</a></li>
+                    <li><a href="#">Аялал</a></li>
+                    <li><a href="#">Буудал</a></li>
+                  </ul>
+                </div>
+            </article>
     
-            <a href="#" class="togglefaq">Танайх хэд хүртэл ажиллах вэ? Бүтэн сайн өдөр ажиллах уу?</a>
-            <div class="faqanswer">
-                <p>&#x2022; Манайх 24/7 буюу бүх өдөр, бүх цагуудад ажиллаж байна. Та 976-70105050 дугаарт холбогдож мэдээллийг авна уу.</p>
-            </div>
-          </div>
+            <article class="tokyo-section">
+                <img src="images\japanMain.jpg" width="200" height="100">
+                <div class="text-container">
+                  <h4>Токио</h4>
+                  <ul class="buttonkk">
+                    <li><a href="#">Нислэг</a></li>
+                    <li><a href="#">Аялал</a></li>
+                    <li><a href="#">Буудал</a></li>
+                  </ul>
+                </div>
+            </article>
+    
+            <article class="seoul-section">
+                <img src="images\seoulMain.jpg" width="200" height="100">
+                <div class="text-container">
+                  <h4>Сөүл</h4>
+                  <ul class="buttonkk">
+                    <li><a href="#">Нислэг</a></li>
+                    <li><a href="#">Аялал</a></li>
+                    <li><a href="#">Буудал</a></li>
+                  </ul>
+                </div>
+            </article>
+        </section>
+        
+        
+
+        <article class="faq-section">
+        <strong><h2>Түгээмэл Асуултууд</h2></strong>
+          
+            <section>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod , 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  </p>
+            </section>
+          
+            <section>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod , 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  </p>
+              </section>
+          
+              <section>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod , 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ,Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  </p>
+              </section>
+        </article>
 
         <footer>
-            <div class="footer-container">
-                <div class="footer-row">
-                  
-                  <div class="footer-content">
-                    <h2>Бидний тухай </h2>
-                    <ul>
-                      <li><a href="#">Танилцуулга</a></li>
-                      <li><a href="#">Үйлчилгээний нөхцөл</a></li>
-                      <li><a href="#">Санал хүсэлт</a></li>
-                    </ul>
-                  </div>
-                  <div class="footer-content">
-                    <h2>Тусламж үйлчилгээ</h2>
-                    <ul>
-                      <li><a href="#">Зөвлөгөө авах</a></li>
-                      <li><a href="#">E-Mail-р зөвлөгөө авах</a></li>
-                      <li><a href="#">Тээшний нөхцөл</a></li>
-                    </ul>
-                  </div>
-                  <div class="footer-content">
-                    <h2>Холбоо барих </h2>
-                    <ul>
-                        <li><a href="tel:+97618001818">Утас: 1800-1818</a></li>
-                        <li><a href="mailto:info@airlink.mn">E-Mail: info@airlink.mn</a></li>
-                        <li><a href="https://shorturl.at/BJKNT">Хаяг: Гранд оффис, 7 давхар, 73 тоот, 1 хороо, Сүхбаатар дүүрэг, Улаанбаатар, Монгол улс</a></li>
-                    </ul>
-                  </div>
-                  <div class="footer-content">
-                    <h2>Биднийг дагаарай </h2>
-                    <div class="logos">
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/Airlink.mn/" aria-label="Facebook page">
-                                    <img src="logos/facebook.png" width="30" height="30" alt="facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/airlink.mn" aria-label="Instagram account">
-                                    <img src="logos/instagram.png" width="30" height="30" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCCE_qNTMi-7PoTYrvsc-KVA" aria-label="Youtube channel">
-                                    <img src="logos/youtube.png" width="40" height="28" alt="youtube">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://api.whatsapp.com/send/?phone=97672701818&text&type=phone_number&app_absent=0" aria-label="Contact via WhatsApp">
-                                    <img src="logos/whatsapp.png" width="28" height="28" alt="whatsapp">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                </div>
-        
-                <div class="right">
-                  <p class="right-text">airlink.mn © 2017-2024 Зохиогчийн эрх хамгаалагдсан</p>
-                </div>
-              </div>
+            <section class="footer-column">
+                <h5>БИДНИЙ ТУХАЙ</h5>
+                <ul>
+                    <li><a href="#">Танилцуулга</a></li>
+                    <li><a href="#">Үйлчигээний нөхцөл</a></li>
+                    <li><a href="#">Санал хүсэлт</a></li>
+                </ul>
+            </section>
+            <section class="footer-column">
+                <h5>ТУСЛАМЖ ҮЙЛЧИГЭЭ</h5>
+                <ul>
+                    <li><a href="#">Зөвлөгөө авах</a></li>
+                    <li><a href="mailto:info@airlink.mn">E-Mail-р зөвлөгөө авах</a></li>
+                    <li><a href="#">Тээшний нөхцөлүүд</a></li>
+                </ul>
+            </section>
+            <section>
+                <h5>ХОЛБОО БАРИХ</h5>
+                <ul>
+                    <li><a href="tel:+97618001818">Утас: 1800-1818</a></li>
+                    <li><a href="mailto:info@airlink.mn">E-Mail: info@airlink.mn</a></li>
+                    <li><a href="https://shorturl.at/BJKNT">Хаяг: Гранд оффис, 7 давхар, 73 тоот, 1 хороо, Сүхбаатар дүүрэг, Улаанбаатар, Монгол улс</a></li>
+                </ul>
+            </section>
+            <section>
+                <h5>БИДНИЙГ ДАГААРАЙ</h5>
+                <ul>
+                    <a href="https://www.facebook.com/Airlink.mn/">
+                        <img src="https://www.iconpacks.net/icons/1/free-facebook-icon-90-thumb.png" width="55" height="55" >
+                    </a>
+                </ul>
+                <ul>
+                    <a href="https://www.instagram.com/airlink.mn">
+                        <img src="https://www.iconpacks.net/icons/3/free-icon-black-instagram-transparent-logo-10671.png" width="50" height="50" >
+                    </a>
+                </ul>
+                <ul>
+                    <a href="https://www.youtube.com/channel/UCCE_qNTMi-7PoTYrvsc-KVA">
+                        <img src="https://www.iconpacks.net/icons/3/free-icon-youtube-logo-7625.png" width="50" height="50" >
+                    </a>
+                </ul>
+                <ul>
+                    <a href="https://api.whatsapp.com/send/?phone=97672701818&text&type=phone_number&app_absent=0">
+                        <img src="https://www.iconpacks.net/icons/2/free-icon-whatsapp-logo-4452.png" width="50" height="50" >
+                    </a>
+                </ul>
+            </section>
+            <section>
+                <p>Copyright &copy; 2023 Airlink. All Rights Reserved.</p>
+            </section>
         </footer>
-        <script>
-          // function book() {
-          //   event.preventDefault();
 
-          //   const fromCity = document.getElementById('fromCitySelect').value;
-          //   const toCity = document.getElementById('toCitySelect').value;
 
-          //   const flightDetails = `
-          //       <p>Хаанаас: ${fromCity}</p>
-          //       <p>Хаашаа: ${toCity}</p>
-          //   `;
-
-          //   document.querySelector('.flightbooking__bottom').insertAdjacentHTML('beforeend', flightDetails);
-          // }
-          function book() {
-            event.preventDefault();
-
-            const toCityId = document.getElementById('toCitySelect').value;
-            const selectedPackage = packagesData.find(package => package.id === toCityId);
-
-            if (selectedPackage) {
-                const packagePrice = selectedPackage.price;
-                const priceDetails = `<p>Package Price: ${packagePrice}</p>`;
-                document.querySelector('.flightbooking__bottom').insertAdjacentHTML('beforeend', priceDetails);
-            } else {
-                const errorMessage = `<p>Сонгогдсон хот алга байна </p>`;
-                document.querySelector('.flightbooking__bottom').insertAdjacentHTML('beforeend', errorMessage);
-            }
-          }
-        </script>
-        
-        <script>
-          populateCities('fromCitySelect', 'cities1.json');
-          populateCities('toCitySelect', 'cities.json');
-        </script>
-        <script src="js/package.js"></script>
-      </main>
-  </body>
-</html>
+    </main>
+    </body>
+    </html>

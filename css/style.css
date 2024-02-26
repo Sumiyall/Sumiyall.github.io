@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
 body{
-    background: url(../images/blueimg.png);
+    background: url(./images/blueimg.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 38px;
@@ -57,6 +57,7 @@ body{
     border-radius: 10px;
     border: 1px solid grey;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
     
 }
 .buttons button:hover img{
@@ -80,8 +81,8 @@ body{
 }
 .status{
     position: absolute;
-    top: 50vh;
-    left: 30vw;
+    top: 60vh;
+    left: 25vw;
     padding: 20px;
     border: 1px solid black;
     border-radius: 20px;
@@ -143,41 +144,63 @@ body{
 }
 .travelb{
     position: relative;
+    flex-direction: column;
     top: 70vh;
     text-align: center;
     background-position: center ;
 }
 .travelb img {
-    width: 1000px; 
-    height: 500px;
-    display: block;
-    margin: auto;
-    
-  object-fit: cover;
-    border-radius: 50px;
+    width: 1000px; /* Set the width of the image */
+    height: 400px; /* Set the height of the image */
+    display: block; /* Ensure the image is treated as a block element */
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.travelb span{
+    position: absolute;
+    font-family: 'PT Sans', sans-serif;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.travelb article{
+    background: transparent;
+    border: none;
+    overflow:hidden;
 }
 
-.travelb button {
-    position: absolute; 
-    top: 70%;
-    left: 40%; 
+.adal{
+    color: black;
+    display: flex;
+    margin-right: 30%;
+    position: absolute;
+    margin-top: 2rem;
+    font-family: 'Lobster', sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.haihB{
+    position: absolute;
+    top: 45vh;
+    left: 30%;
     transform: translate(-50%, -50%); 
     width: 100px; 
     height: 60px; 
-    background-color: red; 
-    color: white; 
+    background-color: white; 
+    color: black; 
     font-size: 18px; 
     border: 1px solid white; 
+    border-radius: 10px;
+    width: 140px;
     transition: background-color 0.3s ease;
 }
-.travelb button:hover {
-    background-color: lightcoral; 
-}
-.adal{
-    color: white;
-    position: relative;
-    font-family: 'Lobster', sans-serif;
-    font-size: 80px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    border-radius: 1px solid black;
+
+.hotcontainer{
+    position: static;
+    margin-top: 80vh;
 }
