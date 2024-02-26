@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
 body{
-    background: url(./images/blueimg.png);
+    background: url(../images/blueimg.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 38px;
@@ -148,10 +148,10 @@ body{
     background-position: center ;
 }
 .travelb img {
-    width: 1000px; /* Set the width of the image */
-    height: 500px; /* Set the height of the image */
-    display: block; /* Ensure the image is treated as a block element */
-    margin: auto; /* Center the image horizontally */
+    width: 1000px; 
+    height: 500px;
+    display: block;
+    margin: auto;
     
   object-fit: cover;
     border-radius: 50px;

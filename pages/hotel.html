@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/hotel.css">
+  <title>Airlink</title>
+  <link rel="icon" href="../logos/logo1.png">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../js/citiesselector.js"></script>
+  <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../css/faqcont.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="../css/flightform.css">
+  <link rel="stylesheet" href="../css/package.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&family=Lobster&family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header> 
+      <section class="fill">
+          <!-- fill hiij baigaa heseg -->
+      </section>
+      <section class="navbar">
+          <img class="logo" src="https://airlink.mn/44c14a03ac95294e1ce7dba508111550.svg">
+          <a href="#">Нэвтрэх</a>
+          <a href="#">Тусламж үйлчилгээ</a>
+          <a href="#">Мэдээ</a>
+      </section>
+
+  <style>
+      @media screen and (max-width: 1000px) {
+                  .tanii{
+                      color: red;
+                  }
+                  .navbar a{
+                      margin: 0px;
+                      float: right;
+                      font-size: 15px;
+                  }
+                  .logo{
+                      width: 20%;
+                  }
+              }
+      @media screen and (max-width: 1700px){
+          .buttons button img{
+              width: 150px;
+              height: 200px;
+          }
+      }
+  </style>
+      
+  </header>
+    <main>
+      <h1 class="tanii">Таны аялалыг бид бүтээнэ</h1>
+      <section class="buttons">
+          <button>
+              <a href="../index.html"><img src="../images\flight-hero.jpg" alt="Airlink" width="210" height="280"></a>
+              <span>Нислэг</span>
+          </button>
+          <button>
+              <a href="/pages/travel.html"><img src="../images\aylal.jpg" alt="Airlink" width="210" height="280"></a>
+              <span>Аялал</span>
+          </button>
+          <button>
+              <a href="/pages/hotel.html"><img src="../images\hotel.jpg" alt="Airlink" width="210" height="280"></a>
+              <span>Буудал</span>
+          </button>
+        </section>
+
+
+        <section class="flightbooking">
+          <div class="flightbooking__container">
+            <div class="flightbooking__top">
+                <div class="flight__option active">
+                   <a href="#">Буудал Захиалах  </a>
+                </div>
+            </div>
+            <div class="flightbooking__bottom"> 
+            
+    
+              <form action="" class="flightform">
+                <div class="flightform__conn">
+                  <div class="flightform__from">
+                    <div class="">
+                      <label for="">Хаана ?</label>
+                      <select id="fromCitySelect" name="fromCity">
+                        <option value="" id="fromCitySelect">Буудаллах хот</option>
+                      </select>
+                    </div>
+                  </div>
+    
+                  <div class="flightform__date">
+                    <div class="">
+                      <label for="">Буудаллах өдөр</label>
+                      <input
+                        type="date"
+                        name=""
+                        id=""
+                      />
+                    </div>
+                  </div>
+
+                  <div class="filghttype">
+                    <select class="zorselect">
+                      <option selected>1 зорчигч</option>
+                      <option value="1">2 зорчигч</option>
+                      <option value="2">3 зорчигч</option>
+                    </select>
+                  </div>
+                </div>
+    
+                <div class="submitdiv">
+                  <input type="submit" value="Захиалах" class="flightsubmit" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        
+
+
+
+        <footer>
+          <div class="footer-container">
+              <div class="footer-row">
+                
+                <div class="footer-content">
+                  <h2>Бидний тухай </h2>
+                  <ul>
+                    <li><a href="#">Танилцуулга</a></li>
+                    <li><a href="#">Үйлчилгээний нөхцөл</a></li>
+                    <li><a href="#">Санал хүсэлт</a></li>
+                  </ul>
+                </div>
+                <div class="footer-content">
+                  <h2>Тусламж үйлчилгээ</h2>
+                  <ul>
+                    <li><a href="#">Зөвлөгөө авах</a></li>
+                    <li><a href="#">E-Mail-р зөвлөгөө авах</a></li>
+                    <li><a href="#">Тээшний нөхцөл</a></li>
+                  </ul>
+                </div>
+                <div class="footer-content">
+                  <h2>Холбоо барих </h2>
+                  <ul>
+                      <li><a href="tel:+97618001818">Утас: 1800-1818</a></li>
+                      <li><a href="mailto:info@airlink.mn">E-Mail: info@airlink.mn</a></li>
+                      <li><a href="https://shorturl.at/BJKNT">Хаяг: Гранд оффис, 7 давхар, 73 тоот, 1 хороо, Сүхбаатар дүүрэг, Улаанбаатар, Монгол улс</a></li>
+                  </ul>
+                </div>
+                <div class="footer-content">
+                  <h2>Биднийг дагаарай </h2>
+                  <div class="logos">
+                      <ul>
+                          <li>
+                              <a href="https://www.facebook.com/Airlink.mn/" aria-label="Facebook page">
+                                  <img src="logos/facebook.png" width="30" height="30" alt="facebook">
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.instagram.com/airlink.mn" aria-label="Instagram account">
+                                  <img src="logos/instagram.png" width="30" height="30" alt="instagram">
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.youtube.com/channel/UCCE_qNTMi-7PoTYrvsc-KVA" aria-label="Youtube channel">
+                                  <img src="logos/youtube.png" width="40" height="28" alt="youtube">
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://api.whatsapp.com/send/?phone=97672701818&text&type=phone_number&app_absent=0" aria-label="Contact via WhatsApp">
+                                  <img src="logos/whatsapp.png" width="28" height="28" alt="whatsapp">
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              
+              </div>
+      
+              <div class="right">
+                <p class="right-text">airlink.mn © 2017-2024 Зохиогчийн эрх хамгаалагдсан</p>
+              </div>
+            </div>
+      </footer>
+      <script>
+        populateCities('fromCitySelect', '../cities.json');
+      </script>
+    </main>
+</body>
+</html>

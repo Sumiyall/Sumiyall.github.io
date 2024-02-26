@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+body{
+    font-size: 82.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.flightbooking{
+       width:100%;
+       padding: 2rem;
+       
+}
+
+
+.flightbooking__container{
+      margin:auto;
+      width:80%;
+     padding:2rem;
+
+     padding-top: 18rem;
+
+}
+
+
+.flightbooking__top{
+      display: flex;
+      align-items: center;
+}
+
+
+.flight__option{
+    background:white;
+    box-shadow: rgba(0.2 ,0,0, 0) 0px 4px 12px;
+    margin-right: 20px;
+    padding:1rem 3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.flight__option a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color:gray;
+}
+
+.flight__option  a div{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.flightbooking__bottom{
+    box-shadow: rgba(0,0,0, 0.2) 0px 4px 12px;
+    background:rgb(255, 254, 254);
+    padding:3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+
+.flighttypes{
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 20px;
+}
+
+.filghttype{
+     padding: 0.5rem 1rem;
+     margin-right: 50px !important;
+     background:white;
+     border-radius: 10px;
+     /* border-radius: 2px; */
+     box-shadow: rgba(0,0,0, 0.2) 0px 4px 12px;
+  
+}
+.filghttype select{
+    border: none;
+}
+
+.filghttype a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#913469;
+}
+
+.filghttype a > div{
+    margin-left: 10px;
+}
+
+.flightform {
+    display:flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.flightform__conn{
+    display:flex;
+    align-items: center;
+}
+
+
+
+
+
+.flightform__from , .flightform__date{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.flightform__from div , .flightform__date div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    /* background:#e0cca6; */
+    /* border: solid 1px rgb(212, 212, 212); */
+    background:rgb(255, 255, 255);
+    padding:0.5rem;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 4px 12px;
+}
+.flightform__from div select{
+    border: none;
+    padding-left: 500px;
+}
+
+#fromCitySelect {
+    font-size: 14px;
+    padding: 9px; /* Change the font size to your desired value */
+}
+#toCitySelect {
+    font-size: 14px;
+    padding: 9px; /* Change the font size to your desired value */
+}
+.flightform__from div{
+    width:228px;
+}
+
+.flightform__from div input , .flightform__date div input{
+     border:none;
+     outline:none;
+     background:transparent;
+     padding:0.5rem 0;
+     width: 100%;
+     font-size: 16px;
+     color:#223344;
+}
+
+
+
+
+.flightform__from div label , .flightform__date div label{
+    color:#6d8494;
+    font-size: 12px;
+}
+
+.submitdiv{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flightsubmit{
+
+    border:none;
+    height:100%;
+    outline:none;
+    height:60px;
+    padding: 0.3rem 1.1rem;
+    color: #fff;
+    background: #913469;
+    border-radius: 5px;
+    cursor:pointer;
+    width:180px;
+}

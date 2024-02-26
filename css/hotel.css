@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
+body{
+    background: url(../images/hotel2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 38px;
+}
+*{
+    margin: 0px;
+}
+.fill{
+    padding:19px;
+    background: #913469;
+}
+.navbar{
+    width: 100%;
+}
+.logo{
+    margin: 10px;
+    position: relative;
+}
+.navbar a{
+    margin-right: 20px;
+    padding: 10px;
+    position: relative;
+    float: right;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+}
+.navbar a:hover{
+    background: #913469;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+}
+.tanii{
+    color: white;
+    position: relative;
+    font-family: 'Lobster', sans-serif;
+    top: 17vh;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.buttons{
+    position: absolute;
+    left:55vw;
+}
+.buttons button {
+    position: relative;
+    background: transparent;
+    border: none;
+    overflow:hidden;
+}
+.buttons button img{
+    transition:  0.2s;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
+    
+}
+.buttons button:hover img{
+    opacity: 0.75;
+}
+
+.buttons button span {
+    position: absolute;
+    font-family: 'PT Sans', sans-serif;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.buttons button:hover span{
+    opacity: 1;
+    border-radius: 10px;
+    color: grey;
+}
+.status{
+    position: absolute;
+    top: 50vh;
+    left: 30vw;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #cceff0;
+}
+.bar{
+    display: flex;
+}
+
+.containertal{
+    margin-right: 10px;
+    width: 25%;
+    padding : 5px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.containertal button:first-child{
+    width: 40%;
+    float:  left;
+}
+.containertal button:last-child{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.containerzor{
+    position:inherit;
+    width: 30%;
+    padding : 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.containerzor label{
+    font-size: 12px;
+    height: 50%;
+}
+
+.containerdate{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 25%;
+    padding : 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+.klass input{
+    width: 40% ;
+}
+.containerdown{
+    margin-top: 20px;
+}
+.form-control {
+    width: 60%;
+    height: 30px;
+}
+.travelb{
+    position: relative;
+    top: 70vh;
+    text-align: center;
+    background-position: center ;
+}
+.travelb img {
+    width: 1000px;
+    height: 500px;
+    display: block; 
+    margin: auto; 
+    
+  object-fit: cover;
+    border-radius: 50px;
+}
+
+.travelb button {
+    position: absolute; 
+    top: 70%;
+    left: 40%; 
+    transform: translate(-50%, -50%); 
+    width: 100px; 
+    height: 60px; 
+    background-color: red; 
+    color: white; 
+    font-size: 18px; 
+    border: 1px solid white; 
+    transition: background-color 0.3s ease;
+}
+.travelb button:hover {
+    background-color: lightcoral; 
+}
+.adal{
+    color: white;
+    position: relative;
+    font-family: 'Lobster', sans-serif;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 1px solid black;
+}

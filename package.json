@@ -1,0 +1,46 @@
+{
+    "packages": [
+      {
+        "id":"1",
+        "name": "Токио",
+        "image": "./images/japanMain.jpg",
+        "description": "Технологийн хөгжлийн хотод зочлоорой.",
+        "price": "₮5,300,000"
+      },
+      {
+        "id":"2",
+        "name": "Миами",
+        "image": "./images/miamiMain.png",
+        "description": "Үзэгслэнт далайн эргээр аялахыг хүсвэл захиалаарай.",
+        "price": "₮5,300,000"
+      },
+      {
+        "id":"3",
+        "name": "Банкгог",
+        "image": "./images/bangkokmain.jpg",
+        "description": "Үзэгслэнт Банкгог хотын аялал дурсамж дүүрэн байх болно.",
+        "price": "₮5,300,000"
+      },
+      {
+        "id":"4",
+        "name": "Сөүл",
+        "image": "./images/seoulMain.jpg",
+        "description": "Солонгосын нийслэл үзэгслэнтэй бөгөөд аялахад таатай.",
+        "price": "₮5,300,000"
+      },
+      {
+        "id":"5",
+        "name": "Египт",
+        "image": "./images/egyptMain.jpg",
+        "description": "Эртний Египтийн гайхамшигаар аялаарай.",
+        "price": "₮5,300,000"
+      },
+      {
+        "id":"6",
+        "name": "Малдивын арлууд",
+        "image": "./images/maldiviesMain.jpg",
+        "description": "Үзэгслэнтэй далайн эргийн аялалыг танд санал болгож байна.",
+        "price": "₮5,300,000"
+      }
+    ]
+  }
